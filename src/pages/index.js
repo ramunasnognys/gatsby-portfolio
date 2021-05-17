@@ -1,22 +1,36 @@
 import React from "react"
-import SEO from "../components/seo"
+import { Link } from "gatsby"
+import Layout from "../components/Layout"
+import styles from "../styles/home.module.css"
+import Img from "gatsby-image"
 
-const IndexPage = () => (
-  <div>
-    <SEO title="Home" />
-    <div className="banner">
-      <div className="inner-banner">
-        <div className="container">
-          <h1 className="main-headline">
-            Hi,👋
-            <br />
-            I'm Ramūnas Nognys <br />
-            Web Developer based in Vilnius
-          </h1>
+export default function Home({ data }) {
+  console.log(data)
+  return (
+    <Layout>
+      <section className={styles.header}>
+        <div>
+          <h2>Design</h2>
+          <h3>Develop & Deploy</h3>
+          <p>UX designer & web developer based in Manchester.</p>
+          <Link className={styles.btn} to="/projects">
+            My Portfolio Projects
+          </Link>
         </div>
-      </div>
-    </div>
-  </div>
-)
+        <Img fluid={data.file.childImageSharp.fluid} />
+      </section>
+    </Layout>
+  )
+}
 
-export default IndexPage
+export const query = graphql`
+  query Banner {
+    file(relativePath: { eq: "banner.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

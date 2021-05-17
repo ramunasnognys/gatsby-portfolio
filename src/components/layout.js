@@ -1,38 +1,29 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import Navbar from './Navbar'
+import '../styles/global.css'
+import { graphql, useStaticQuery } from 'gatsby'
 
-//Components
-import Header from "./header"
-import Menu from "./menu"
-
-//Styles
-import "../styles/App.scss"
-
-const Layout = ({ children }) => {
-  const siteData = useStaticQuery(graphql`
-    query SiteTitleQuery {
+export default function Layout({ children }) {
+  const data = useStaticQuery(graphql`
+    {
       site {
         siteMetadata {
-          title
+          copyright
         }
       }
     }
   `)
+  const { copyright } = data.site.siteMetadata
 
   return (
-    <div className="app">
-      <Header siteTitle={siteData.site.siteMetadata.title} />
-      <Menu />
-      <div>
-        <main>{children}</main>
+    <div className="layout">
+      <Navbar />
+      <div className="content">
+        { children }
       </div>
+      <footer>
+        <p>{ copyright }</p>
+      </footer>
     </div>
   )
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout

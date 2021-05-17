@@ -1,10 +1,23 @@
-exports.createPages = ({ actions: { createPage } }) => {
-  const products = require("./src/data/products.json")
-  products.forEach(product => {
-    createPage({
-      path: `/product/${product.id}/`,
-      component: require.resolve("./src/templates/product.js"),
-      context: product,
+const path = require(`path`)
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { data } = await graphql(`
+    query Articles {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            slug
+          }
+        }
+      }
+    }
+  `)
+
+  data.allMarkdownRemark.nodes.forEach(node => {
+    actions.createPage({
+      path: "/projects/" + node.frontmatter.slug,
+      component: path.resolve("./src/templates/project-details.js"),
+      context: { slug: node.frontmatter.slug },
     })
   })
 }
