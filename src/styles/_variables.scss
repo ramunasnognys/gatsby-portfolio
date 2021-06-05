@@ -1,0 +1,74 @@
+/*
+ * | VARIABLES | ----------------------------------------------------------------|
+*/
+
+:root {
+  /* CLR | COLORS */
+  --clr-base: 0, 0%;
+  --clr-primary-hs: 48, 66%;
+  --clr-secondary-hs: 236, 31%;
+
+  --clr-base-bg-color: hsl(var(--clr-base), var(--l-96));
+  --clr-base-border-color: 2px solid teal;
+
+  --l-0: 0%;
+  --l-20: 20%;
+  --l-30: 30%;
+  --l-40: 40%;
+  --l-50: 50%;
+  --l-62: 62%;
+  --l-90: 90%;
+  --l-96: 96%;
+  --l-100: 100%;
+
+  --clr-neutral-100: #000000;
+  --clr-neutral-200: #212121;
+  --clr-neutral-300: #3b3b3b;
+  --clr-neutral-400: #585858;
+  --clr-neutral-500: #777777;
+  --clr-neutral-600: #979797;
+  --clr-neutral-700: #b9b9b9;
+  --clr-neutral-800: #dbdbdb;
+  --clr-neutral-850: #f6f6f6;
+  --clr-neutral-900: #ffffff;
+
+  --clr-red: hsl(0, 100%, 52%);
+  --clr-sky-blue: hsl(200, 100%, 80%);
+
+  --clr-primary-light: hsl(var(--clr-primary-hs), var(--l-62));
+  --clr-primary-normal: hsl(var(--clr-primary-hs), var(--l-40));
+  --clr-primary-darker: hsl(var(--clr-primary-hs), var(--l-20));
+
+  --clr-secondary-light: hsl(var(--clr-secondary-hs), var(--l-62));
+  --clr-secondary-normal: hsl(var(--clr-secondary-hs), var(--l-40));
+  --clr-secondary-darker: hsl(var(--clr-secondary-hs), var(--l-30));
+
+  /* FF | TYPOGRAPHIC */
+  --ff-base-font-family: "Poppins", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  --ff-secondary-font-family: "Source Code Pro", monospace;
+
+  --ff-root-font-size: 62.5%;
+  --ff-base-font-size: 1.6rem;
+  --ff-small-font-size: 1.4rem;
+
+  --ff-base-line-height: 1.659;
+
+  --ff-headings-line-height: 1.15;
+  --ff-headings-margin: 2.75rem 0 1.05rem;
+
+  --ff-base-font-color: var(--clr-secondary-darker);
+  --ff-link-font-color: var(---clr-sky-blue);
+
+  --ff-button-font-size: 1em;
+
+  // BB | BUTTONS
+  --bb-button-height: 35px;
+  --bb-button-border-radius: 2px;
+
+  // LL | LAYOUT
+  --ll-mobile-max-width: 100%;
+  --ll-tablet-max-width: 1152px;
+  --ll-desktop-max-width: 1244px;
+}

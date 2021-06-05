@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,11 +25,21 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Source Code Pro`,
+          `Poppins\:300,400,400i,700`,
+        ],
+        display: 'swap'
+      }
+    },
   ],
   siteMetadata: {
-    title: "Web Monster",
+    title: "Portfolio",
     description: "web dev portfolio",
-    copyright: "This website is copyright 2021 Web Warrior",
-    contact: "me@thewebwarrioruk.co.uk",
+    copyright: "This website is made by Ramunas Nognys",
+    contact: "ramunas.nognys@gmail.com",
   },
 }

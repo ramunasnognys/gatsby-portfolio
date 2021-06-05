@@ -1,0 +1,22 @@
+header,
+.header {
+  background: var(--clr-neutral-900);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  &__wrapper {
+    padding: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    flex: 1;
+  }
+}
