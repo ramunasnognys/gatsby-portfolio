@@ -1,6 +1,6 @@
 header,
 .header {
-  background: var(--clr-neutral-900);
+  background: var(--clr-white);
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -14,9 +14,10 @@ header,
     align-items: center;
   }
   &__logo {
+    font-family: var(--ff-base-font-family);
     font-size: 1.5rem;
-    letter-spacing: 5px;
-    font-weight: bold;
+    letter-spacing: 4px;
+    font-weight: 600;
     flex: 1;
   }
 }

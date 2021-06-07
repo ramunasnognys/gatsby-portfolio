@@ -21,19 +21,22 @@
   --l-96: 96%;
   --l-100: 100%;
 
-  --clr-neutral-100: #000000;
-  --clr-neutral-200: #212121;
-  --clr-neutral-300: #3b3b3b;
-  --clr-neutral-400: #585858;
-  --clr-neutral-500: #777777;
-  --clr-neutral-600: #979797;
-  --clr-neutral-700: #b9b9b9;
-  --clr-neutral-800: #dbdbdb;
-  --clr-neutral-850: #f6f6f6;
-  --clr-neutral-900: #ffffff;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
 
   --clr-red: hsl(0, 100%, 52%);
   --clr-sky-blue: hsl(200, 100%, 80%);
+
+  --clr-neutral-100: ##f7fafc;
+  --clr-neutral-200: #edf2f7;
+  --clr-neutral-300: #e2e8f0;
+  --clr-neutral-400: #cbd5e0;
+  --clr-neutral-500: #a0aec0;
+  --clr-neutral-600: #718096;
+  --clr-neutral-700: #4a5568;
+  --clr-neutral-800: #2d3748;
+  --clr-neutral-850: #f6f6f6;
+  --clr-neutral-900: #1a202c;
 
   --clr-primary-light: hsl(var(--clr-primary-hs), var(--l-62));
   --clr-primary-normal: hsl(var(--clr-primary-hs), var(--l-40));
@@ -42,6 +45,20 @@
   --clr-secondary-light: hsl(var(--clr-secondary-hs), var(--l-62));
   --clr-secondary-normal: hsl(var(--clr-secondary-hs), var(--l-40));
   --clr-secondary-darker: hsl(var(--clr-secondary-hs), var(--l-30));
+
+   /* light theme color */
+   --light-background: #fff;
+   --light-background-secondary: #eaeaea;
+   --light-color: #222;
+   --light-color-secondary: #999;
+   --light-border-color: #dcdcdc;
+ 
+   /* dark theme colors */
+   --dark-background: #292a2d;
+   --dark-background-secondary: #3b3d42;
+   --dark-color: #a9a9b3;
+   --dark-color-secondary: #73747b;
+   --dark-border-color: #4a4b50;
 
   /* FF | TYPOGRAPHIC */
   --ff-base-font-family: "Poppins", -apple-system, BlinkMacSystemFont,

@@ -19,10 +19,24 @@ body {
 body {
   font-family: var(--ff-secondary-font-family);
   font-size: var(--ff-base-font-size);
-  background-color: var(--clr-base-bg-color);
-  color: var(--ff-base-font-color);
+  // background-color: var(--clr-base-bg-color);
+  // color: var(--ff-base-font-color);
   line-height: var(--ff-base-line-height);
   text-rendering: optimizeLegibility;
+
+  overflow-x: none;
+  overscroll-behavior: hidden;
+}
+
+body.dark {
+  transition: all 1s;
+  background-color: var(--dark-background);
+  color: var(--dark-color);
+}
+body.light {
+  transition: all 1s;
+  background-color: var(--clr-neutral-100);
+  color: var(--ff-base-font-color);
 }
 
 h1,

@@ -27,6 +27,13 @@ const Home = ({ data }) => {
             facilis facere debitis molestias, officiis libero blanditiis culpa,
             explicabo incidunt ipsam eum voluptates architecto.
           </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
+            architecto, repellendus ut nulla accusamus obcaecati a praesentium
+            eius tempore reiciendis nemo magnam temporibus molestiae quos. Unde,
+            facilis facere debitis molestias, officiis libero blanditiis culpa,
+            explicabo incidunt ipsam eum voluptates architecto.
+          </p>
         </div>
       </section>
     </Layout>
