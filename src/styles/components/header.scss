@@ -20,4 +20,17 @@ header,
     font-weight: 600;
     flex: 1;
   }
+  &__menu {
+    display: flex;
+    gap: 1em;
+    transition: all 1s;
+   
+
+    .modebtn {
+      cursor: pointer;
+   
+  
+  
+    }
+  }
 }

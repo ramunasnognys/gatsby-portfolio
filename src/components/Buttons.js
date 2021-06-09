@@ -1,11 +1,7 @@
 import React from "react"
 
 function Buttons() {
-  return (
-    <div>
-      <button className="btn">Menu</button>
-    </div>
-  )
+  return <button className="btn">Menu</button>
 }
 
 export default Buttons

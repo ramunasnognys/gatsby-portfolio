@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import Navbar from "./Navbar"
 import Buttons from "./Buttons"
 //Icons
+import moon from "../assets/svg/moon.svg"
+import sun from "../assets/svg/sun.svg"
 import {
   Instagram,
   Facebook,
@@ -11,13 +13,16 @@ import {
   Github,
 } from "../assets/svg/social-icons"
 
+
 const Header = props => {
+  console.log();
   const handleMode = () => {
     return props.mode === "light"
       ? props.setMode("dark")
       : props.setMode("light")
-  }
-console.log(handleMode);
+
+    }
+
   return (
     <header className="header">
       <div className="container">
@@ -27,12 +32,16 @@ console.log(handleMode);
               <Link to="/">RAMŪNAS.</Link>
             </div>
             <div className="header__menu">
-            <button className="modebtn" onClick={handleMode}>MENU+</button>
-              {/* <Buttons /> */}
+              <a className="modebtn" onClick={handleMode}>
+                {props.mode === "light" ? (
+                  <img src={moon} alt="Light mode" />
+                ) : (
+                  <img src={sun} alt="Dark mode" />
+                )}
+              </a>
+              <Buttons />
+            
             </div>
-            {/* <Instagram /> */}
-
-            {/* <Icon name={github} icon={getIcon(github)} /> */}
           </div>
         </div>
       </div>

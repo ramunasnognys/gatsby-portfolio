@@ -30,14 +30,19 @@ body {
 
 body.dark {
   transition: all 1s;
-  background-color: var(--dark-background);
+  background-color: var(--dark-background); 
   color: var(--dark-color);
+
+  header {
+    background-color: var(--dark-background);
+  }
 }
 body.light {
   transition: all 1s;
   background-color: var(--clr-neutral-100);
   color: var(--ff-base-font-color);
 }
+
 
 h1,
 h2,
@@ -115,7 +120,7 @@ a {
     padding: 0 16px;
   }
   @include media(">desktop", "<=1600px") {
-    background: var(--clr-primary-light);
+    background: var(--clr-primary-darker);
     max-width: var(--ll-desktop-max-width);
     padding: 0 32px;
   }
