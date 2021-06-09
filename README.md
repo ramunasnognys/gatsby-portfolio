@@ -101,3 +101,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ### Ny Reference
 [![justask](http://www.justlask.com/blog/darkmode)] switching between dark and light color
 [![plaininglish](https://javascript.plainenglish.io/how-to-add-dark-mode-in-a-gatsby-website-23df7289b220)] switching between themes: icon change
+
+## new update
