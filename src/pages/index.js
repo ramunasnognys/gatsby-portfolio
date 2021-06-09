@@ -1,23 +1,39 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import styles from "../styles/home.module.css"
+import Header from "../components/Header"
+import "../styles/init.scss"
+
 import Img from "gatsby-image"
 
-export default function Home({ data }) {
-  console.log(data)
+const Home = ({ data }) => {
   return (
     <Layout>
-      <section className={styles.header}>
-        <div>
-          <h2>Design</h2>
-          <h3>Develop & Deploy</h3>
-          <p>UX designer & web developer based in Manchester.</p>
-          <Link className={styles.btn} to="/projects">
-            My Portfolio Projects
-          </Link>
+      <section className="container hero">
+        <div className="wrapper">
+          <main>
+            <h1>New Starters</h1>
+          </main>
+          <h2>New Starters</h2>
+          <h3>New Starters</h3>
+          <h4>New Starters</h4>
+          <h5>New Starters</h5>
+          <h6>New Starters</h6>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
+            architecto, repellendus ut nulla accusamus obcaecati a praesentium
+            eius tempore reiciendis nemo magnam temporibus molestiae quos. Unde,
+            facilis facere debitis molestias, officiis libero blanditiis culpa,
+            explicabo incidunt ipsam eum voluptates architecto.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
+            architecto, repellendus ut nulla accusamus obcaecati a praesentium
+            eius tempore reiciendis nemo magnam temporibus molestiae quos. Unde,
+            facilis facere debitis molestias, officiis libero blanditiis culpa,
+            explicabo incidunt ipsam eum voluptates architecto.
+          </p>
         </div>
-        <Img fluid={data.file.childImageSharp.fluid} />
       </section>
     </Layout>
   )
@@ -34,3 +50,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Home

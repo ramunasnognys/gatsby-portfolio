@@ -1,7 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
 import Layout from "../components/Layout"
-import styles from "../styles/project-details.module.css"
 
 const ProjectDetails = ({ data }) => {
   const { html } = data.markdownRemark
@@ -9,16 +8,13 @@ const ProjectDetails = ({ data }) => {
 
   return (
     <Layout>
-      <div className={styles.details}>
+      <div>
         <h2>{title}</h2>
         <h3>{stack}</h3>
-        <div className={styles.featured}>
+        <div>
           <Img fluid={featuredImg.childImageSharp.fluid} />
         </div>
-        <div
-          className={styles.html}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   )
