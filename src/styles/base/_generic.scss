@@ -105,13 +105,17 @@ a {
 
 //mobile first
 .container {
+  border: var(--clr-base-border-color);
   flex-grow: 1;
   margin: 0 auto;
   padding: 0 8px;
   position: relative;
   width: var(--ll-mobile-max-width);
 
-  border: var(--clr-base-border-color);
+  
+  .wrapper {
+    margin-top: 6rem;
+  }
 
   @include media(">tablet", "<=desktop") {
     background: orange;

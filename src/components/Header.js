@@ -13,15 +13,13 @@ import {
   Github,
 } from "../assets/svg/social-icons"
 
-
 const Header = props => {
-  console.log();
+  console.log()
   const handleMode = () => {
     return props.mode === "light"
       ? props.setMode("dark")
       : props.setMode("light")
-
-    }
+  }
 
   return (
     <header className="header">
@@ -29,7 +27,10 @@ const Header = props => {
         <div className="header__wrapper">
           <div className="header__inner">
             <div className="header__logo">
-              <Link to="/">RAMŪNAS.</Link>
+              <Link to="/">
+                {" "}
+                ram<span></span>nog
+              </Link>
             </div>
             <div className="header__menu">
               <a className="modebtn" onClick={handleMode}>
@@ -40,7 +41,6 @@ const Header = props => {
                 )}
               </a>
               <Buttons />
-            
             </div>
           </div>
         </div>

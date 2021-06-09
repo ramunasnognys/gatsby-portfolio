@@ -7,10 +7,9 @@ import "../styles/init.scss"
 import Img from "gatsby-image"
 
 const Home = ({ data }) => {
-  console.log(data)
   return (
     <Layout>
-      <section className="container main">
+      <section className="container hero">
         <div className="wrapper">
           <main>
             <h1>New Starters</h1>
